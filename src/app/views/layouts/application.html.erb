@@ -23,9 +23,15 @@
   </p>
   <p>
     <% if user_signed_in? %>
+    <h3>
+      <%= link_to 'My Items',  user_items_path %>
+    </h3>
     <p>
       <%= link_to 'Logout', destroy_user_session_path, method: 'delete', class: 'button is-warning'%></p>
     <%end%>
+  </p>
+  <p>
+    <%= link_to 'Show all items', items_path%>
   </p>
 </nav>
 
