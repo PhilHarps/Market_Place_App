@@ -1,4 +1,6 @@
 class ItemsController < ApplicationController
+  before_action :authorise, only: [:create, :update, :destroy]
+
   def index
     @items = Item.all
   end
@@ -9,6 +11,10 @@ class ItemsController < ApplicationController
 
   def show
     @item = Item.find(params[:id])
+  end
+
+  def new
+    @item = Item.new
   end
 
   def create
@@ -27,5 +33,14 @@ private
 
 def item_params
   params.require(:item).permit(:description, :price, :condition, :gender)
+end
+
+def authorise
+  if current_user == self.user || !current_user.has_role?(:admin)
+
+    flash[:alert] = "You are not authorised to do this!"
+      redirect_to root_path
+  end
+
 end
 end
