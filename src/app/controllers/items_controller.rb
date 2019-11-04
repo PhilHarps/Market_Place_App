@@ -21,6 +21,7 @@ class ItemsController < ApplicationController
 
   def create
     @item = Item.new(item_params)
+    @item.image.attach(item_params[:image])
     @item.user = current_user
     if @item.save
       flash[:alert] = "Success, Your item has been posted!"
@@ -47,6 +48,7 @@ class ItemsController < ApplicationController
   end
 
   def destroy
+    @item.destroy
   end
 
   private
@@ -56,7 +58,7 @@ class ItemsController < ApplicationController
   end
 
   def item_params
-    params.require(:item).permit(:description, :price, :size, :condition, :gender)
+    params.require(:item).permit(:description, :price, :size, :condition, :gender, :image)
   end
 
   def authorise

@@ -4,6 +4,7 @@
 <p>Condition: <%= item.condition %> Gender: <%= item.gender %></p>
 <% if current_user == item.user %>
 <%= link_to  "Edit Item", edit_item_path(item) %>
+<%= link_to 'Delete', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 <% end %>
 <hr>
 
