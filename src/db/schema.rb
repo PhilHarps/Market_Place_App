@@ -19,9 +19,10 @@ ActiveRecord::Schema.define(version: 2019_11_01_035735) do
     t.bigint "user_id"
     t.string "description"
     t.float "price"
+    t.float "decimal"
     t.string "condition"
     t.string "gender"
-    t.integer "size"
+    t.string "size"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_items_on_user_id"

@@ -1,2 +1,20 @@
-<h1>Items#show</h1>
-<p>Find me in app/views/items/show.html.erb</p>
+<p>
+    <dt>Description</dt>
+    <dd><%= @item.description %></dd>
+</p>
+<p>
+    <dt>Price</dt>
+    <dd><%= number_to_currency @item.price %></dd>
+</p>
+<p>
+    <dt>Size</dt>
+    <dd><%= @item.size %></dd>
+</p>
+<p>
+    <dt>Gender</dt>
+    <dd><%= @item.gender %></dd>
+</p>
+<p>
+    <dt>Condition</dt>
+    <dd><%= @item.condition %></dd>
+</p>
