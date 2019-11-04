@@ -37,8 +37,13 @@ class ItemsController < ApplicationController
   end
 
   def update
-    @item.update(item_params)
-    redirect_to @item
+    if @item.update(item_params)
+      flash[:alert] = "Success, Your item has been edited!"
+      redirect_to @item
+    else
+      flash[:alert] = "Failure!"
+      render :edit
+    end
   end
 
   def destroy
