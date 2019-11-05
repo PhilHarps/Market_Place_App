@@ -8,6 +8,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          
   has_many :items
+  has_many :orders
 
   def assign_default_role
     add_role(:user) if roles.blank?

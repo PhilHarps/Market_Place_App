@@ -16,7 +16,6 @@ class ItemsController < ApplicationController
 
   def new
     @item = Item.new
-    
   end
 
   def create
@@ -30,7 +29,7 @@ class ItemsController < ApplicationController
       flash[:alert] = "Failure!"
       render :new
     end
-    # @item.image.attach(item_params[:image])
+    
     
   end
 
