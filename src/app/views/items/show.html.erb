@@ -10,6 +10,8 @@
     <dt>Size</dt>
     <dd><%= @item.size %></dd>
 </p>
+<figure><%= @item.image.attached? ? image_tag(@item.image, width: 250, class: 'is-rounded') : " " %></figure>
+
 <p>
     <dt>Gender</dt>
     <dd><%= @item.gender %></dd>
