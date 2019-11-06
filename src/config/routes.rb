@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-resources :orders
+  get 'orders/complete'
+  get 'orders/cancel'
+  get 'orders/:item_id', to: "orders#new", as: "new_order"
 resources :items
   devise_for :users, controllers: {
     application: 'application'

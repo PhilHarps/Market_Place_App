@@ -1,3 +1,5 @@
+require 'stripe'
+
 class OrdersController < ApplicationController
   def index
     @orders = Order.all
@@ -7,7 +9,30 @@ class OrdersController < ApplicationController
   end
 
   def new
-    @order = Order.new
+    @item = Item.find(params[:item_id])
+    
+    Stripe.api_key = Rails.application.credentials.dig(:stripe, :api_key)
+    @session = Stripe::Checkout::Session.create(
+      payment_method_types: ['card'],
+      line_items: [{
+        name: @item.description,
+        description: @item.size,
+        amount: (@item.price * 100).to_i,
+        currency: 'aud',
+        quantity: 1
+      }],
+      success_url: "#{root_url}/orders/complete",
+      cancel_url: "#{root_url}/orders/cancel"
+    )
+  end
+
+  def complete
+    redirect_to root_path
+    flash[:notice] = "Success Your Order has been completed!"
+  end
+
+  def cancel
+    render html: "<h2> Your order has been cancelled</h2>".html_safe
   end
 
   def create
@@ -51,5 +76,5 @@ class OrdersController < ApplicationController
       redirect_to root_path
     end
   end
-end
+end 
 end
