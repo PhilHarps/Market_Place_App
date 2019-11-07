@@ -1,8 +1,8 @@
 <% items.each do |item| %>
     <h3><%= link_to item.description, item_path(item) %></h3>
     <h5>Price: <%= number_to_currency item.price %> Size: <%= item.size %></h5>
-    <figure>
-    <%= item.image.attached? ? image_tag(item.image, width: 250, class: 'is-rounded') : " " %>
+    <figure class="image is-64x64">
+    <%= item.image.attached? ? image_tag(item.image, width: 250) : " " %>
     </figure>
     <p>Condition: <%= item.condition %> Gender: <%= item.gender %></p>
     <% if current_user == item.user %>

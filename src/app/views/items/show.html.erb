@@ -1,22 +1,25 @@
 <p>
-    <dt>Description</dt>
-    <dd><%= @item.description %></dd>
+  <dt>Description</dt>
+  <dd><%= @item.description %></dd>
 </p>
 <p>
-    <dt>Price</dt>
-    <dd><%= number_to_currency @item.price %></dd>
+  <dt>Price</dt>
+  <dd><%= number_to_currency @item.price %></dd>
 </p>
 <p>
-    <dt>Size</dt>
-    <dd><%= @item.size %></dd>
+  <dt>Size</dt>
+  <dd><%= @item.size %></dd>
 </p>
-<figure><%= @item.image.attached? ? image_tag(@item.image, width: 250, class: 'is-rounded') : " " %></figure>
+<figure>
+  <%= @item.image.attached? ? image_tag(@item.image, width: 250, class:
+  'is-rounded') : " " %>
+</figure>
 <div><a href="/orders/<%= @item.id %>" data-turbolinks="false">Buy Me!</a></div>
 <p>
-    <dt>Gender</dt>
-    <dd><%= @item.gender %></dd>
+  <dt>Gender</dt>
+  <dd><%= @item.gender %></dd>
 </p>
 <p>
-    <dt>Condition</dt>
-    <dd><%= @item.condition %></dd>
+  <dt>Condition</dt>
+  <dd><%= @item.condition %></dd>
 </p>
