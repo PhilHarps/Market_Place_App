@@ -8,10 +8,11 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-<body class="container">
+<body>
   
    <%= render "layouts/nav" %>
 
+   <section id="content">
    <% if user_signed_in? %>
     <p class="subtitle">Welcome, <%= current_user.username%></p>
     <% else %>
@@ -20,7 +21,7 @@
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-
     <%= yield %>
+    </section>
   </body>
 </html>

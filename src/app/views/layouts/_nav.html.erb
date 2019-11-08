@@ -21,7 +21,7 @@
           </a>
           <a>
             <%= link_to 'login', new_user_session_path, class: "button
-            is-light"%>
+            is-danger"%>
           </a>
           <% end %>
           <% if user_signed_in? %>
@@ -37,7 +37,7 @@
           </a>
           <a>
             <%= link_to 'Logout', destroy_user_session_path, method: 'delete',
-            class: 'button is-warning'%>
+            class: 'button is-danger'%>
           </a>
           <%end%>
         </div>
