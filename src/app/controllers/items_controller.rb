@@ -7,6 +7,9 @@ class ItemsController < ApplicationController
     @items = Item.all
   end
 
+  def home
+  end
+
   def user_index
     @items = Item.where(user: current_user)
   end

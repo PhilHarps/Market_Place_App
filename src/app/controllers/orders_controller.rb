@@ -16,7 +16,7 @@ class OrdersController < ApplicationController
       payment_method_types: ['card'],
       line_items: [{
         name: @item.description,
-        description: @item.size,
+        description: "Size: #{@item.size}",
         amount: (@item.price * 100).to_i,
         currency: 'aud',
         quantity: 1
