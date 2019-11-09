@@ -15,6 +15,9 @@
       <div class="navbar-item">
         <div class="buttons">
             <% if !user_signed_in? %>
+            <a>
+            <%= link_to 'Home', root_path, class: "button is-primary" %>
+          </a>
           <a>
             <%= link_to 'signup', new_user_registration_path, class: "button
             is-primary"%>
@@ -23,6 +26,7 @@
             <%= link_to 'login', new_user_session_path, class: "button
             is-danger"%>
           </a>
+          
           <% end %>
           <% if user_signed_in? %>
           <a>

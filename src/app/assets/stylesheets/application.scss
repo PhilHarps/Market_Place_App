@@ -13,11 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+  
+
 @import 'bulma';
 // @media screen and (min-width: 350px) and (max-width: 899px){
 
 // }
 // @media screen and (min-width: 900px){
+
+   
+   
+
+  
 
      #content{     display: flex;
         flex-direction: column;
@@ -39,6 +47,21 @@ figure.is-128x128 img {
         background-size: cover;
      
     }
+
+      footer {
+   position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: transparent;
+  color: black;
+  text-align: center; 
+  
+  padding: 3rem 1.5rem 3rem;
+  .note {
+    float: left;
+}
+}
 
       
     .navbar{
@@ -69,6 +92,8 @@ figure.is-128x128 img {
         margin: 0.5rem;
     }
 }
+
+
 // }
 // *{
 //     padding: 0;

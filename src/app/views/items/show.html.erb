@@ -11,8 +11,7 @@
   <dd><%= @item.size %></dd>
 </p>
 <figure>
-  <%= @item.image.attached? ? image_tag(@item.image, width: 250, class:
-  'is-rounded') : " " %>
+  <%= @item.image.attached? ? image_tag(@item.image, width: 250,) : " " %>
 </figure>
 <div><a href="/orders/<%= @item.id %>" data-turbolinks="false">Buy Me!</a></div>
 <p>
