@@ -48,6 +48,25 @@
 ### Screenshots
 - Sitemap:
 <img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/sitemap.JPG" width="500">
+- Home Page:
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/home.JPG" width="500">
+- Login Page:
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/login_page.JPG" width="500">
+- SignUp Page:
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/signup_page.JPG" width="500">
+- New Item Page:
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/new_item_page.JPG" width="500">
+- All Items Page:
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/all_items_page.JPG" width="500">
+- Stripe Pay Page:
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/stripe_pay_page.JPG" width="500">
+- Trello Image 1:
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/blob/master/docs/Trello/Trello1.JPG" width="500">
+- Trello Image 2:
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/blob/master/docs/Trello/Trello2.JPG" width="500">
+
+### Target Audience
+The target audience for this project would be primarily parents or guardians of children. This would also include extended family such as grandparents, uncles and aunts. From a personal point of view this app would also target any future perspective employers. 
 
 ### Tech Stack
 
@@ -58,8 +77,8 @@
 - Ruby-on-Rails for development
 - Heroku for deployment
 - Rails Gems (see below) for extending functionalities beyond MVC
-
-
+- Trello for user stories and work flow.
+- Lucid Chart for site map and ERD
 
 > Detail any third party services that your App will use.
 - Cloudinary: To manage Image upload
@@ -98,9 +117,13 @@ The MVC separation of concerns was demonstrated by data validation handled withi
 
 
 
-### Workflow of User Stories
+### Workflow And User Stories
 
-> Provide User Stories for your App
+> Provide User Stories and Workflow for your App	
+
+See my Trello board for user stories and work flow.
+[https://trello.com/b/Bmh3qyZS/babyclothesmarket](https://trello.com/b/Bmh3qyZS/babyclothesmarket)
+ 
 
 ### Wireframes for your application
 
