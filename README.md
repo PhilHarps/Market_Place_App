@@ -48,6 +48,9 @@
 ### Screenshots
 - Sitemap:
 <img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/sitemap.JPG" width="500">
+- ERD
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Baby%20Clothes%20Market%20ERD.pdf" width="500">
+
 - Home Page:
 <img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/home.JPG" width="500">
 - Login Page:
