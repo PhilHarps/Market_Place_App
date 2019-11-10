@@ -50,7 +50,7 @@
 <img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/sitemap.JPG" width="500">
 
 - ERD
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/ERD.jpeg" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/ERD.jpeg" width="800">
 
 - Home Page:
 <img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/home.JPG" width="500">
@@ -153,5 +153,5 @@ To try to keep my code dry I used the application.html.erb and created three par
 ### Allocation of Tasks
 Being a one person project allocation of tasks was all down to myself. To help me with this I used Trello which you can see from the above link and screenshots. Below is a timeline of how the project unfolded over the timeframe given.
 
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Timeline.png" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Timeline.png" width="800">
 
