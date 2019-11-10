@@ -47,23 +47,23 @@
 
 ### Screenshots
 - Sitemap:
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/sitemap.JPG" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/sitemap.JPG" width="800">
 
 - ERD
 <img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/ERD.jpeg" width="800">
 
 - Home Page:
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/home.JPG" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/home.JPG" width="800">
 - Login Page:
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/login_page.JPG" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/login_page.JPG" width="800">
 - SignUp Page:
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/signup_page.JPG" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/signup_page.JPG" width="800">
 - New Item Page:
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/new_item_page.JPG" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/new_item_page.JPG" width="800">
 - All Items Page:
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/all_items_page.JPG" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/all_items_page.JPG" width="800">
 - Stripe Pay Page:
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/stripe_pay_page.JPG" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/stripe_pay_page.JPG" width="800">
 - Trello Image 1:
 <img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Trello/Trello1.JPG">
 - Trello Image 2:
@@ -112,12 +112,12 @@ See my Trello board for user stories and work flow.
 ### Wireframes for your application
 
 > Provide Wireframes for your App.
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/wireframes/desktop_wireframe.jpeg" width="500">
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/wireframes/mobile_wireframe1.jpeg" width="500">
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/wireframes/mobile_wireframe2.jpeg" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/wireframes/desktop_wireframe.jpeg" width="800">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/wireframes/mobile_wireframe1.jpeg" width="800">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/wireframes/mobile_wireframe2.jpeg" width="800">
 
 ERD (Database Schema) for Baby Clothes Bazaar App:
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Baby%20Clothes%20Market%20ERD.pdf" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Baby%20Clothes%20Market%20ERD.pdf" width="800">
 
 ### Mechanics of App
 Below I will give a brief description of the mechanics of the baby clothes bazaar app, detailing what the models, controllers and views do and how they interact.
