@@ -79,6 +79,7 @@ The target audience for this project would be primarily parents or guardians of 
 - Rails Gems (see below) for extending functionalities beyond MVC
 - Trello for user stories and work flow.
 - Lucid Chart for site map and ERD
+- Zoho to produce slideshow
 
 > Detail any third party services that your App will use.
 - Cloudinary: To manage Image upload
@@ -95,27 +96,6 @@ The target audience for this project would be primarily parents or guardians of 
 - Rolify: For authorisation
 - Devise: For authentication
 
-### Structure of Application
-
-> Describe (in general terms) the data structure of marketplace apps that are similar to your own (e.g. eBay, Airbnb).
-
-
-> Describe the architecture of your App. Explain the different high-level components (abstractions) in your App.
-
-**Model**
-
-**Controllers**
-
-**Views**
-
-The MVC separation of concerns was demonstrated by data validation handled within the models. Page redirection and ferrying form-submitted data happened in the controllers. And the views display different functions based on the type of user currently logged in.
-
-
-### Project Plan & Design process
-
-> Discuss how Agile methodology is being implemented in your project.
-
-
 
 ### Workflow And User Stories
 
@@ -128,30 +108,46 @@ See my Trello board for user stories and work flow.
 ### Wireframes for your application
 
 > Provide Wireframes for your App.
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/wireframes/desktop_wireframe.jpeg" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/wireframes/mobile_wireframe1.jpeg" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/wireframes/mobile_wireframe2.jpeg" width="500">
 
-### Database Structure Entity Relationship Diagrams
+ERD (Database Schema) for Baby Clothes Bazaar App:
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Baby%20Clothes%20Market%20ERD.pdf" width="500">
 
-> Discuss the database relations to be implemented.
+### Mechanics of App
+Below I will give a brief description of the mechanics of the baby clothes bazaar app, detailing what the models, controllers and views do and how they interact.
 
-> Describe your project’s models in terms of the relationships (active record associations) they have with each other.
+#### Models
+I created four models for  this app: item, order, user and role.
+- role
+The role model was created as part of the Rolify gem to manage user authorisation. In the role model it validates inclusion in Rolify and, has and belongs to many. To manage this it created a join table called users_roles.
 
-> Provide your database schema design.
+- user
+The user model was created for the Devise gem. It can keep track of users credentials, upon creation it allocates a role automatically from Rolify. I put a method in there to validate this so if a user has no role it will assign one. The user can have many items and many orders.
 
-**Initial Design**
+- order
+The order model like all the models is a child of the Application record. It belongs to the user and has many items.
 
-**Revised Design**
+- item
+ the item model belongs to the user and has one attached image. It validates the description, price, and numericality for presence and the numericality to be greater then 0.
+ 
+#### Controllers
+- Application Controller
+In the application controller there is a before action and a protected method for the Devise gem. 
 
-> Identify the database to be used in your App and provide a justification for your choice.
+- Orders Controller
+The orders controller, like the items controller is a child of the Application controller. Stripe has a require in the order controller and in the new method is where stripe creates a session. There is an index method to list all orders, a complete method to redirect you to the home page after you have bought an item, and a cancel and update method that makes use of flash alerts and notices. I have created an order_params method to require :order and permit :user and :items. I also created an authorise method so if the current user is not the order user or admin they can't edit anything and a flash message appears before redirecting them to the home page.
 
-> Identify and describe the production database setup (i.e. postgres instance).
+- Items Controller
+In the items controller I have setup a before action to authenticate user only when the new, create, update or destroy method is called. there is a before action also for authorise and to fetch item upon calling edit, update and destroy, and the fetch item is also used for calling the show method. there are index and user _index methods so you can list all items or just the current logged in users items. In create and update methods you can attach an image and have also used flash alerts to let the user know if they were successful or not. In the private part of the controller I have set up an authorise method just like in the orders controller and a params method that requires an :item and permits :description, :price, :size, :condition, :gender, :image.
 
+#### Views
 
-### Security
+To try to keep my code dry I used the application.html.erb and created three partials. One for the nav bar one for forms and one for item. The nav partial helped as it appeared on all pages. The forms partial was used for both the edit and new view. The item partial was used for the index and user_index view. Most of my views were created when I created the items controller. I initially created a pages model but deleted it as I was only using it for the home page. I created one in my items view instead. With more time I feel more refactoring could be done and organising of my views to make it cleaner and smoother code.
 
-> Discuss and analyse requirements related to information system security.
+### Allocation of Tasks
+Being a one person project allocation of tasks was all down to myself. To help me with this I used Trello which you can see from the above link and screenshots. Below is a timeline of how the project unfolded over the timeframe given.
 
-> Research what your legal obligations are in relation to handling user data.
-
-
-### Attribution
+<img src="https://github.com/PhilHarps/Market_Place_App/Market_Place_App/blob/master/docs/Timeline.png" width="500">
 
