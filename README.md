@@ -61,9 +61,9 @@
 - Stripe Pay Page:
 <img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/stripe_pay_page.JPG" width="500">
 - Trello Image 1:
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/blob/master/docs/Trello/Trello1.JPG" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Trello/Trello1.JPG">
 - Trello Image 2:
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/blob/master/docs/Trello/Trello2.JPG" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Trello/Trello2.JPG" >
 
 ### Target Audience
 The target audience for this project would be primarily parents or guardians of children. This would also include extended family such as grandparents, uncles and aunts. From a personal point of view this app would also target any future perspective employers. 
