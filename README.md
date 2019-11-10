@@ -50,7 +50,7 @@
 <img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/sitemap.JPG" width="500">
 
 - ERD
-<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/ERD.pdf" width="500">
+<img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/ERD.JPG" width="500">
 
 - Home Page:
 <img src="https://github.com/PhilHarps/Market_Place_App/blob/master/docs/Screenshots/home.JPG" width="500">
