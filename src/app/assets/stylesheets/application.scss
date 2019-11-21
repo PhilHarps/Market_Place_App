@@ -14,87 +14,92 @@
  *= require_self
  */
 
-  
-
-@import 'bulma';
+@import "bulma";
 // @media screen and (min-width: 350px) and (max-width: 899px){
 
 // }
 // @media screen and (min-width: 900px){
 
-   
-   
-
-  
-
-     #content{     display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-         padding-top: 60px;
-         
-        }
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom:140px;
+}
 
 figure.is-128x128 img {
-    width: auto;
-    height: 128px;
-    border:1px solid black;
-} 
+  width: auto;
+  height: 128px;
+  border: 1px solid black;
+}
 
-    body {
-        min-height: 100vh;
+body {
+    display: flex;
+    flex-direction: column;
+    
+  min-height: 100vh;
 
-        background: url("https://cdn.shopify.com/s/files/1/1143/5434/products/Stripe_yellow-yellow_detail.JPG?v=1503361203");
-        background-size: cover;
-     
-    }
+  background: url("https://cdn.shopify.com/s/files/1/1143/5434/products/Stripe_yellow-yellow_detail.JPG?v=1503361203");
+  background-size: cover;
+//   padding-bottom: 120px;
+}
 
-      footer {
-   position: fixed;
+footer {
+  position: fixed;
   left: 0;
   bottom: 0;
+
   width: 100%;
   background: transparent;
   color: black;
-  text-align: center; 
-  
+  text-align: center;
+
   padding: 3rem 1.5rem 3rem;
   .note {
     float: left;
-}
+  }
 }
 
-      
-    .navbar{
-        background: transparent;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        // background:#00d1b277;
-        // background: black;
-        // border: 1px solid black;
-        
-
-    }
+.navbar {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  // background:#00d1b277;
+  // background: black;
+  // border: 1px solid black;
+}
 // .navbarstart,.navbar-end{
 //         background-color: rgb(185, 148, 219);
 // }
 .navbar-menu {
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    .subtitle{
+  align-items: center;
+  .subtitle {
     margin: 0;
     padding: 0;
-
-    
-    }
-    a{
-        margin: 0.5rem;
-    }
+  }
+  a {
+    margin: 0.5rem;
+  }
 }
 
 
+.btm-button{
+    width: 100%;
+    div{
+    display: flex;
+    justify-content: space-between;
+    input{
+        margin-right: 15px;
+    }
+    }
+
+    // align-content: center;
+}
 // }
 // *{
 //     padding: 0;
@@ -127,8 +132,6 @@ figure.is-128x128 img {
 //         // border: 1px ridge black;
 //         box-shadow: 5 5 10 white;
 //         border-radius: 25px;
-        
-        
 
 //         &::focus{
 //             background: white;
@@ -137,7 +140,6 @@ figure.is-128x128 img {
 
 //     }
 // }
-
 
 // button {
 //     background-color: inherit;

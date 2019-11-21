@@ -17,15 +17,13 @@
       <% else %>
       <p class="subtitle">Welcome, to Baby Bazaar</p>
       <% end %>
-
+      <section id="alerts">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
+      </section>
       <%= yield %>
     </section>
 
-  </body>
-
-  
     <footer>
       <div class="note">
         <p>
@@ -36,4 +34,5 @@
         </p>
       </div>
     </footer>
+  </body>
 </html>
